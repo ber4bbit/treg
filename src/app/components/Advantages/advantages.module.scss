@@ -1,0 +1,113 @@
+.advantages {
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        background-color: #f5f5f5;
+        padding: 72px 54px;
+        border-radius: 30px;
+        box-shadow: 8px 8px 0 #002dcb;
+    }
+
+    &__title {
+        font-size: 80px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        line-height: 70px;
+        color: #2d2d2d;
+        margin-bottom: 102px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        margin: 36px auto 0 auto;
+        background: linear-gradient(101.2deg, #002dcb 13.22%, #2036d1 28.58%, #ac62eb 96.85%, #002dcb 100%);
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+        color: #fff;
+        padding: 26px 22px;
+        border-radius: 47px;
+        transition: background-position 0.45s;
+
+        &:hover {
+            @media (min-width: 1229px) {
+                background-position: -212px;
+
+                span {
+                    transform: translateY(6px);
+                }
+            }
+        }
+
+        span {
+            margin-left: 12px;
+            transition: transform .45s;
+        }
+    }
+
+    &List {
+        display: flex;
+    }
+}
+
+@media (max-width: 1230px) {
+    .advantages {
+        &__title {
+            font-size: 60px;
+            line-height: 64px;
+            margin-bottom: 62px;
+        }
+    }
+}
+
+@media (max-width: 1022px) {
+    .advantages {
+        &__inner {
+            background-color: unset;
+            padding: unset;
+            box-shadow: unset;
+            border-radius: unset;
+        }
+
+        &__title {
+            margin-bottom: 42px;
+        }
+
+        &List {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+    }
+}
+
+@media (max-width: 798px) {
+    .advantages {
+        &__title {
+            font-size: 42px;
+            line-height: 46px;
+            margin-bottom: 36px;
+        }
+
+        &__link {
+            margin-top: 18px;
+        }
+
+        &List {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 606px) {
+    .advantages {
+
+        &__title {
+            font-size: 36px;
+            line-height: 42px;
+        }
+    }
+}

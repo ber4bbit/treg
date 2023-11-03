@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.27",
+    "gsap": "3.8.0",
+    "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "sass": "^1.69.3",
+    "swiper": "^10.3.1",
+    "typed.js": "^2.0.16"
   },
   "devDependencies": {
     "eslint": "^8",

@@ -1,0 +1,53 @@
+.nav {
+    // display: flex;
+
+    &__link {
+        color: #8d8d8d;
+        margin-right: 4px;
+        position: relative;
+        background: linear-gradient(to left, #002dcb, #002dcb) 0 100% no-repeat;
+        background-size: 0 1px;
+        // padding-bottom: 2px;
+        transition:
+            color 0.45s,
+            background-size 0.45s;
+
+        &:not(:first-child) {
+            padding-left: 1em;
+            background-position-x: 1em;
+
+            &::before {
+                content: "/";
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        &:hover {
+            @media (min-width: 1229px) {
+                color: #002dcb;
+                background-size: 100% 1px;
+            }
+        }
+
+        &:active {
+            color: #002dcb;
+            background-size: 100% 1px;
+        }
+    }
+
+    &__current {
+        font-weight: 600;
+        color: #8d8d8d;
+        padding-left: 1em;
+        position: relative;
+
+        &::before {
+            content: "/";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}

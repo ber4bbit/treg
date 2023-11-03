@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // cursor: none;
+
+    // &:hover {
+    //     cursor: none !important;
+    // }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    // cursor: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+button {
+    border: none;
+    background-color: transparent;
+    // cursor: none;
+    font-family: inherit;
+
+    &:hover {
+        @media (min-width: 1229px) {
+            cursor: pointer;
+        }
+    }
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+    // cursor: none;
+
+    // &:hover {
+    //     cursor: none;
+    // }
+}
+
+section {
+    padding: 75px 0;
+    font-family: 'Gilroy', sans-serif;
+
+    @media (max-width: 798px) {
+        padding: 30px 0;
+    }
+
+    @media (max-width: 606px) {
+        padding: 15px 0;
+    }
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    margin-top: 105px;
+    // margin-bottom: 497px;
+    // box-shadow: 0 0 20px rgba(83, 83, 83, 0.4);
+
+    @media (max-width: 1022px) {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    // &:hover {
+    //     cursor: none;
+    // }
+}
+
+body {
+    overflow-x: hidden;
+    // cursor: none;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #254ee0;
+        border-radius: 12px;
+
+        &:hover {
+            background-color: #254ee0;
+        }
+    }
+}
+
+.showed {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 1022px) {
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy ExtraBold"), url("../../public/fonts/Gilroy/Gilroy-ExtraBold.woff2") format("woff2"),
+        url("../../public/fonts/Gilroy/Gilroy-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy Bold"), url("../../public/fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"),
+        url("../../public/fonts/Gilroy/Gilroy-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy Light"), url("../../public/fonts/Gilroy/Gilroy-Light.woff2") format("woff2"),
+        url("../../public/fonts/Gilroy/Gilroy-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy Light"), url("../../public/fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"),
+        url("../../public/fonts/Gilroy/Gilroy-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: local("Rubik Bold"), url("../../public/fonts/Rubik/Rubik-Bold.woff2") format("woff2"),
+        url("../../public/fonts/Rubik/Rubik-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Regular"), url("../../public/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+        url("../../public/fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "icomoon";
+    src: url("../../public/fonts/Treg-icons/icomoon.woff") format("woff"),
+        url("../../public/fonts/Treg-icons/icomoon.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cross:before {
+    content: "\e906";
+}
+.icon-minus:before {
+    content: "\e905";
+}
+.icon-cursor:before {
+    content: "\e904";
+}
+.icon-arrow-long:before {
+    content: "\e903";
+}
+.icon-plus:before {
+    content: "\e902";
+}
+.icon-phone:before {
+    content: "\e900";
+}
+.icon-arrow-light:before {
+    content: "\e901";
+}

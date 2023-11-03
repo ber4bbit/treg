@@ -1,0 +1,105 @@
+.policy {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 70px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        line-height: 70px;
+        color: #2d2d2d;
+        margin-bottom: 42px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        color: #2d2d2d;
+        font-weight: 600;
+        margin: 12px 0;
+
+        span {
+            color: #002dcb;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 22px;
+        color: #2d2d2d;
+        margin-bottom: 6px;
+
+        a {
+            color: #002dcb;
+            background: linear-gradient(to left, #002dcb, #002dcb) 0 100% no-repeat;
+            background-size: 0 1px;
+            padding-bottom: 1px;
+            transition: background-size 0.45s;
+
+            &:hover {
+                @media (min-width: 1229px) {
+                    background-size: 100% 1px;
+                }
+            }
+
+            &:active {
+                background-size: 100% 1px;
+            }
+        }
+
+        span {
+            color: #002dcb;
+            font-weight: 600;
+        }
+
+        strong {
+            font-weight: 400;
+            color: #002dcb;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6px;
+        color: #2d2d2d;
+        font-size: 16px;
+        line-height: 22px;
+
+        li {
+            position: relative;
+
+            span {
+                color: #002dcb;
+            }
+
+            &::before {
+                content: "•";
+                color: #002dcb;
+                display: inline-block;
+                width: 1em;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__table {
+        border: 1px solid #a1a1a1;
+        border-radius: 12px;
+        padding: 24px;
+        border-collapse: separate;
+        border-spacing: 12px;
+
+        th {
+            text-align: left;
+            padding: 6px 0;
+        }
+
+        td {
+            padding: 6px 0;
+            line-height: 22px;
+        }
+    }
+}

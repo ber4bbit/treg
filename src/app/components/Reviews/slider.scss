@@ -1,0 +1,17 @@
+.swiper {
+    width: 100%;
+    padding-bottom: 72px;
+
+    &-slide {
+
+        &.swiper-slide-active {
+            box-shadow: 6px 6px 0 #002dcb;
+        }
+    }
+}
+
+@media (max-width: 798px) {
+    .swiper {
+        padding-right: 24px;
+    }
+}
